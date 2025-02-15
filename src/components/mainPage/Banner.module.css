@@ -1,0 +1,370 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MontserratMedium';
+    src: url('../assets/Montserrat-Medium.ttf') format('truetype');
+  }
+
+.MainPage, .MainPageMobile {
+    background-color: #121036;
+    background-position: center;
+    /* height: 3684px; */
+    height: 672px;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.MainPageMobile {
+    height: 336px;
+}
+.backgrondPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 1684px;
+    background-size: cover; /*Изображение будет полностью покрывать элемент, сохраняя пропорции*/
+    background-repeat: no-repeat /*На всякий случай чтобы не дублировалось*/;
+    background-image: url("./assets/fon.webp");
+    background-position: center;
+    opacity: 0.5;
+    z-index: 100;
+    pointer-events: none;
+}
+.MainPage__banner, .MainPageMobile__banner  {
+    border-radius: 30px;
+    margin-top: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-size: cover;
+    overflow: hidden;
+}
+.MainPage__banner {
+    max-height: 672px;
+    width: 1140px;
+    background-image: url("./assets/bunner.webp");
+    height: image-height url('./assets/bunner.webp');
+
+}
+.MainPage__banner span {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+    text-transform: uppercase;
+    /* margin-top: -30px; */
+    text-align: center;
+}
+.MainPageMobile__banner span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    width: 293px;
+    height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.MainPage__banner p{
+    font-size: 20px;
+    height: 50px;
+    width: 530px;
+
+}
+.MainPage__banner p, .MainPageMobile__banner p  {
+    text-align: center;
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+    font-weight: 600;
+}
+.MainPageMobile__banner p {
+    font-size: 16px;
+}
+.MainPage__banner button {
+    height: 76px;
+    width: 344px;
+    font-size: 20px;
+    margin-top:  180px;
+
+    box-shadow: 0 0 100px #F958B5;
+}
+.MainPageMobile__banner button {
+    height: 44px;
+    width: 200px;
+    font-size: 14px;
+
+    box-shadow: 0 0 50px #F958B5;
+}
+.MainPage__banner button, .MainPageMobile__banner button {
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-family:Montserrat;
+    font-weight: 600;
+    background-image: linear-gradient( to top right, #260182, #790BC2);
+
+
+    background-size: 500% auto;
+    background-position: 100% 100%;
+    transition: 1s;
+}
+.MainPage__banner button:hover {
+    background-image: linear-gradient( to top right, #790BC2, #260182);
+    background-position: 0 0;
+}
+.MainPageMobile__banner{
+    width: 300px;
+    height: 300px;
+    background-image: url("../assets/mobileBunner.webp");
+}
+
+/* Стилизация модального окна */
+
+.applicationContent, .applicationMobileContent, .applicationDesktopContent{
+     background-image: linear-gradient( #B43BA4, #3E0B88);
+     border-radius: 20px;
+     font-family:Montserrat;
+     font-weight: 600;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 80px;
+}
+.applicationContent span, .applicationMobileContent span {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.applicationContent span {
+    margin-top: 48px;
+}
+.applicationMobileContent span {
+    margin-top: 40px;
+}
+.applicationContent {
+    width: 500px;
+    height: 698px;
+    font-size: 24px;
+}
+.applicationMobileContent {
+    width: 320px;
+    height: 555px;
+    font-size: 20px;
+}
+.applicationDesktopContent {
+    width: 500px;
+    height: 698px;
+    font-size: 24px;
+}
+.applicationContent__close, .applicationMobileContent__close {
+    background-color: #9e212100;
+    border: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+.applicationMobileContent p {
+    font-family:Montserrat;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.applicationDesktopContent p {
+    font-family:Montserrat;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.applicationForm {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    height: 427px;
+    margin: 0 auto;
+
+}
+
+.applicationForm label {
+    margin-bottom: 5px;
+}
+.applicationForm input, .applicationForm textarea {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    height: 39px;
+    margin-top: 16px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    padding-left: 10px;
+}
+.applicationForm textarea {
+    height: 88px;
+}
+.applicationForm input[type="name"]::placeholder,
+    input[type="phone"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea[id="text"]::placeholder {
+    color: #8D8D8D;
+    font-family:MontserratMedium;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+
+  .applicationForm textarea[id="text"]::placeholder {
+    color: #8D8D8D;
+    font-family:Montserrat;
+    font-weight: lighter;
+  }
+  .applicationForm textarea[id="text"] {
+    padding-top: 10px;
+  }
+
+/* Desktop Form Modal*/
+
+.desktopForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 610px;
+    margin: 0 auto;
+
+}
+
+.desktopForm label {
+    margin-bottom: 5px;
+}
+.desktopForm input, .desktopForm textarea {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    height: 52px;
+    margin-top: 16px;
+}
+.desktopForm textarea {
+    height: 111px;
+}
+.desktopForm input[type="name"]::placeholder,
+    input[type="phone"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea[id="text"]::placeholder {
+
+    color: #8D8D8D;
+    font-family:Montserrat;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  .desktopForm textarea[id="text"]::placeholder {
+    color: #8D8D8D;
+    font-family:Montserrat;
+    font-weight: lighter;
+  }
+  .desktopForm textarea[id="text"] {
+    padding-top: 10px;
+    line-height: 1.5;
+  }
+  .inputFile {
+    height: 53px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 16px;
+    color:  #8D8D8D;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .inputFile input {
+    padding: 0;
+    margin-top: auto;
+    height: auto;
+    margin-bottom: auto;
+  }
+  .submitForm {
+    background-color: #F958B5;
+    color: white;
+    font-family:Montserrat;
+    font-weight: lighter;
+    font-size: 16px;
+    border: none;
+    margin-top: 16px;
+  }
+
+ .desktopForm .submitForm {
+    background-color: #F958B5;
+    color: white;
+    font-family:Montserrat;
+    font-weight: lighter;
+    font-size: 16px;
+    border: none;
+    margin-top: 16px;
+  }
+  .errorMessage {
+    color: white;
+    font-size: 14px;
+  }
+  .inputFile label {
+    margin-bottom: 0;
+  }
+  .modalWindow > div {
+    background-color: transparent !important;
+  }
+  .submitForm + p:hover {
+    cursor: pointer;
+  }
+@media (max-width: 540px) {
+
+ .submitForm {
+    height: 45px;
+ }
+ .applicationForm {
+    gap: 16px;
+ }
+ .applicationForm input, .applicationForm textarea {
+    margin-bottom: 0;
+    border-width: 1px;
+    height: 39px;
+    margin-top: 0;
+}
+.applicationForm {
+    margin-top: 10px;
+}
+.inputFile {
+    width: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.inputFile input{
+    width: 100%;
+}
+.errorMessage,.errorEmailMobileMessage {
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    margin-left: 5px !important;
+    height: 200px;
+    max-width: 256px;
+    position: absolute;
+    text-align: left !important;
+}
+}

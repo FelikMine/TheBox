@@ -1,0 +1,242 @@
+
+
+
+.backgrondPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../assets/fon.webp");
+    background-position: center;
+    opacity: 0.5;
+    z-index: 100;
+    pointer-events: none;
+}
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    align-items: stretch;
+}
+.CoinBase {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+}
+.CoinBase > div {
+    /* width: 80%; */
+    width: 1136px;
+}
+
+select {
+    border-radius: 5px;
+    border-color: none;
+    height: auto;
+    width: auto;
+}
+.mainColor {
+    border: none;
+    width: 100%;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.selectColor option[value="Green"]{
+    background-color: #2A5757;
+}
+.selectColor option[value="Purple"]{
+    background-color: #781E79;
+}
+.selectColor option[value="Yellow"]{
+    background-color: #796E1E;
+}
+
+#color {
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: cyan;
+}
+
+/* .mainColor {
+    position: relative;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+} */
+
+.dropdown {
+    position: absolute;
+    z-index: 1000;
+    width: 92px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+
+}
+.dropdownItem {
+    padding: 8px;
+    cursor: pointer;
+    color: #333;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.customSelect {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.ChartsContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    font-size: 14px;
+}
+.GridTable {
+    width: 1136px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 14px repeat(3, 61px 280px) 61px 14px;
+    grid-column-gap: 3px;
+    margin-top: 38px;
+}
+.GridTable > div:last-child {
+    background-color: rgba(121, 110, 30, 0.5);
+}
+.GridTable > div:first-child {
+    background-color: rgba(120, 30, 121, 0.5);
+}
+.GridTable > div, .GridTable > div > div {
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+.GridTable > div:nth-child(2n+2) {
+    padding-bottom: 15px;
+    gap: 3px;
+    /* justify-content:; */
+}
+.GridTable > div:nth-child(2), .GridTable > div:nth-child(8) {
+    padding-bottom: 67px;
+}
+.GridTable > div:nth-child(2n+2) > div {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    border: 2px solid #781E79;
+    width: 56px;
+    height: 20px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    font-size: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+}
+
+.GridTable > div:nth-child(2n+2) > div > span:last-child {
+    font-size: 10px;
+    margin-top: -5px;
+}
+.GridTable > div:nth-child(2n+3) > div:nth-child(1){
+    margin-top: 18px;
+    height: 46px;
+    width: 241px;
+    /* background-color: lightpink; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 92px) 42px;
+    grid-template-rows: repeat(2, 20px);
+    gap: 6px;
+}
+.GridTable > div:nth-child(2n+3) > div:nth-child(2) {
+    height: 102px;
+    width: 241px;
+
+    display: grid;
+    grid-template-columns: 70px 110px 55px;
+    grid-template-rows: repeat(2, 20px)  repeat(1, 5px) repeat(2, 20px);
+    box-sizing: border-box;
+    gap: 2px;
+    grid-row-gap: 5px;
+
+}
+.GridTable > div:nth-child(2n+3) > div:nth-child(3) {
+    height: 80px;
+    width: 241px;
+    background-color: transparent;
+}
+.firstLine > div, .firstLine span, .secondLine div {
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    background-color: #FFFFFF;
+    color: black ;
+    text-align: center;
+}
+.firstLine > div:nth-child(2), .firstLine > div:nth-child(5) {
+    border: 2px solid #2A5757;
+}
+.secondLine div {
+    height: 20px;
+    border: 2px solid #2A5757;
+
+}
+.secondLine > div {
+    background-color: #BAFFAC;
+}
+.secondLine > div:nth-child(-n+3), .secondLine > div:nth-child(n+13):nth-child(-n+15) {
+    background-color: #FFC8C8;
+}
+#shadow {
+    background-color: #ffffff00 !important;
+    border: none !important;
+}
+.firstLine, .secondLine {
+    background-color: #ffffff00 !important;
+}
+.firstLine > span {
+    background-color: #ffffff00;
+    color: white;
+}
+#app {
+    width: 1136px;
+    height: 500px;
+}
+#ChartContainter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    /* width: 100vw; */
+}
+
+
+

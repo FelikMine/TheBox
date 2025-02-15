@@ -1,0 +1,877 @@
+
+.PreferencesPage {
+    width: 80%;
+}
+.backgrondPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../assets/fon.webp");
+    background-position: center;
+    opacity: 0.5;
+    z-index: 100;
+    pointer-events: none;
+}
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    align-items: stretch;
+}
+.PreferencesPage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 48px;
+}
+.PreferencesPage__Content {
+    min-height: 580px;
+    height: 100%;
+    width: 80%;
+}
+.PreferencesPage__Content span {
+    font-size: 32px;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+}
+.PreferencesPage__Content__Buttons button {
+    width: 347px;
+    height: 59px;
+    background-color: #790BC2;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+}
+
+.button.active {
+    border-color: #790BC2;
+    background-color: #ffffff00;
+    border-width: 1px;
+}
+.PreferencesPage__Content__Buttons {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.Block1__Column1 {
+    width: 698px;
+    height: 386px;
+    display: grid;
+    grid-template-rows: repeat(3, 40px) 16px;
+    gap: 32px;
+    margin-top: 26px;
+    justify-items: start;
+    margin-top: 58px;
+}
+.PreferencesPage__Content__Block1 input {
+    height: 40px;
+    width: 254px;
+    border-radius: 5px;
+}
+.userName, .userTel, .userMail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.userName label, .userTel label, .userMail label {
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 88px;
+}
+.userName > input[type="text"]::placeholder,
+.userTel > input[type="tel"]::placeholder ,
+.userMail > input[type="email"]::placeholder  {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.userName > input,
+.userTel > input,
+.userMail > input{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    color: black;
+}
+.reMail button {
+    background-color: #8E8893;
+    color: white;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    font-size: 16px;
+    width: 197px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+.reMail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reMailDMobile, .reTelMobile, .reNameDMobile {
+    display: none;
+}
+.Block1__Column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 32px;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.Block1__Column2 {
+    align-items: center;
+    margin-bottom: 70px;
+}
+.Block1__Column2 a {
+    text-decoration: none;
+    color: white;
+}
+.Block1__Column2 {
+    height: 40px;
+    width: 254px;
+}
+.Block1__Column1 input::placeholder{
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+
+.PreferencesPage__Content__Block1 p {
+    font-size: 14px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+}
+.PreferencesPage__Content select {
+    width: 119px;
+    height: 29px;
+    border-radius: 5px;
+}
+.names > span:first-child {
+    margin-bottom: -10px;
+}
+.doIt span{
+    font-size: 14px;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+.doIt {
+    margin-top: -20px;
+}
+.confirmation {
+    margin-top: -20px;
+    margin-left: 185px;
+}
+.PreferencesPage__Content__Block2 , .collapsedBlock,  .PreferencesPage__Content__Block3 {
+    height: 422px;
+    width: 100%;
+    border: solid;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 30px;
+}
+.collapsedBlock {
+    height: 80px;
+}
+
+.PreferencesPage__Content__Block2  {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 27px;
+    gap: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.PreferencesPage__Content__Block2 span{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 105px;
+    display: flex;
+    align-items: center;
+}
+.PreferencesPage__Content__Block2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.PreferencesPage__Content__Block2 div > input{
+    height: 40px;
+    width: 270px;
+    border-radius: 5px;
+}
+.names {
+ margin-bottom: 30px;
+ margin-right: 10px;
+}
+
+.select input {
+    height: 40px;
+    width: 270px;
+    border-radius: 5px;
+}
+.select select:first-of-type {
+    height: 29px;
+    width: 119px;
+}
+.select input[type="api"] {
+    width: 665px;
+    max-width: 900%;
+}
+.select input[type="text"]::placeholder,
+    input[type="tel"]::placeholder,
+    input[type="api"]::placeholder {
+    color: #8E8893;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.addMarket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+}
+.addMarket button{
+    background: url("../assets/Button.svg");
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+}
+.collapsedBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.collapsedBlock button {
+    height: 55px;
+    width: 55px;
+    background: url("../assets/editWindow.svg");
+    border: none;
+
+    bottom: 15px;
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.collapsedBlock span {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+}
+#SaveClose {
+    position: relative;
+    float: right;
+    flex-basis: 100% ;
+    bottom: 325px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 20px;
+
+}
+#SaveClose button {
+    height: 46px;
+    width: 46px;
+    border: none;
+}
+#SaveClose button:first-child {
+    background: url("../assets/save.svg");
+
+}
+#SaveClose button:last-child {
+    background: url("../assets/closeWindow.svg");
+}
+
+#HidePassword {
+    margin-left: 0px;
+    display: inline-block;
+    height: 40px;
+}
+#HidePassword >button {
+    background: #ffffff00;
+    border: none;
+    height: 22px;
+    width: 28px;
+    right: 1px;
+    top: 1px;
+    transform:translate(-130%, 30%);
+}
+#HidePassword > button > img {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+#apiKey {
+    width: 665px;
+    max-width: 100%
+}
+
+/* Настройка 3-его блока */
+
+.PreferencesPage__Content__Block3  {
+    height: 86px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.PreferencesPage__Content__Block3 span  {
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+    font-size: 24px;
+}
+.PreferencesPage__Content__Block3  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.PreferencesPage__Content__Block3 div div {
+    height: 37px;
+    width: 123px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: red;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 1px !important;
+}
+.PreferencesPage__Content__Block3 button {
+    height: 37px;
+    width: 157px;
+    border-radius: 5px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+.errorMessage {
+    color: #C63131;
+    font-family: MontserratMedium !important;
+    font-size: 12px !important;
+    position:absolute;
+    margin-left: 100px;
+    margin-top: 115px;
+}
+
+.exitOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exitContent{
+    height: 468px;
+    width:  500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDD9E5 ;
+    border-radius: 30px;
+  }
+.exitContent {
+    height: 285px;
+  }
+
+.exitContent ul {
+    margin-top: 24px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    text-align: center;
+    gap: 16px;
+}
+.exitContent ul {
+    margin-top: -8px;
+}
+.exitContent li {
+    margin-bottom: 12px;
+    display: inline-block;
+    text-align: center;
+  }
+  .exitContent .exitForm, .exitContent .exitFormStay{
+    background-color: #790BC2;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+  }
+  .exitForm:active, .exitFormStay:active {
+    transform: scale(0.95);
+    }
+  .exitContent li button {
+    height: 52px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0;
+  }
+  .exitContent .exitFormStay {
+    background-color: #ffffff00;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+  }
+
+  .exitContent li:last-of-type {
+    margin-top: -12px;
+  }
+  .exitContent li:first-of-type{
+    margin-bottom: -12px;
+  }
+  .exitContent ul li p {
+    color: black;
+    font-size: 24px;
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+  }
+  .headerMobile__close {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff00;
+    border: none;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+  }
+  .headerDesktop__menu{
+    height: 292px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #111035;
+  }
+
+@media (max-width: 1420px) {
+    #HidePassword {
+        margin-left: 0px;
+        display: inline-block;
+        height: 40px;
+        width: 208px;
+    }
+    #HidePassword >button {
+        background: #ffffff00;
+        border: none;
+        height: 22px;
+        width: 28px;
+        right: 1px;
+        top: 1px;
+    }
+    #HidePassword > button > img {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    #apiKey {
+        width: 665px;
+        max-width: 85%;
+    }
+}
+.PreferencesPage__Content__Block2 div > input::placeholder{
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+.reTel a, .reName a, .reMail a {
+    color: white;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.reTel, .reName, .reMail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.userName label, .userTel label, .userMail label {
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 84px;
+}
+@media (max-width: 540px) {
+
+    #apiKey {
+        width: 200px !important;
+        max-width: 100%;
+    }
+    .exitContent {
+        height: 362px;
+        width:  320px;
+      }
+      .exitContent {
+        height: 230px;
+      }
+      .exitContent ul {
+        margin-top: 24px;
+        gap: 8px;
+      }
+      .exitContent ul {
+        margin-top: -4px;
+      }
+      .exitContent li {
+        margin-bottom: 12px;
+      }
+      .exitContent .exitForm, .exitContent .exitFormStay{
+        font-size: 16px;
+      }
+      .exitForm:active, .exitFormStay:active {
+        transform: scale(0.95);
+    }
+      .exitContent li button {
+        height: 39px;
+        width: 256px;
+      }
+      .loginContent li:last-of-type, .exitContent li:last-of-type {
+        margin-top: -12px;
+      }
+      .exitContent li:first-of-type{
+        margin-bottom: -8px;
+      }
+    .exitContent ul li p{
+        font-size: 20px;
+    }
+    .PreferencesPage__Content {
+        width: 560px !important;
+    }
+    .errorMessage {
+        color: #C63131;
+        font-family: MontserratMedium !important;
+        font-size: 8px !important;
+        position:absolute;
+        margin-left: 185px;
+        margin-top: 105px;
+    }
+    .PreferencesPage__Content__Buttons {
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 24px;
+    }
+    .PreferencesPage__Content span {
+        font-size: 20px;
+    }
+    .PreferencesPage__Content__Buttons button {
+        width: 321px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .PreferencesPage {
+        margin-top: 24px;
+        justify-content: flex-start;
+        margin-left: 60px;
+    }
+
+    .Block1__Column1, .Block1__Column2 {
+        align-items: flex-end;
+        justify-content: center;
+        font-family: 'Montserrat', serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .PreferencesPage__Content {
+        width: 90%;
+        max-width: 360px;
+    }
+    .PreferencesPage__Content__Block2 , .PreferencesPage__Content__Block3 {
+        height: 360px;
+        width: 100% !important;
+        margin-top: 32px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .PreferencesPage__Content__Block2  {
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 27px;
+        gap: 16px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        margin-left: 20px;
+    }
+
+    .PreferencesPage__Content__Block2 span{
+        font-family: 'Montserrat', serif;
+        font-weight: 400;
+        font-size: 14px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        /* margin-right: 10%; */
+    }
+    .PreferencesPage__Content__Block2 div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .PreferencesPage__Content__Block2 div > input{
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    .Block1__Column1{
+        display: grid;
+        grid-template-rows: repeat(2, 50px) 80px repeat(2, 30px);
+        gap: 16px;
+        /* grid-template-columns: none; */
+        margin-top: 26px;
+        height: 359px;
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+    }
+    .doIt span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .Block1__Column1 input::placeholder{
+        font-size: 14px;
+    }
+    .PreferencesPage__Content__Block1 input {
+        height: 30px;
+        width: 235px;
+    }
+    .PreferencesPage {
+        margin-left: 20px;
+    }
+    .Block1__Column2 {
+        display: none;
+    }
+    .reMail, .reTel, .reName {
+        display: block;
+        position: absolute;
+        z-index: 100;
+    }
+    .reTel a, .reName a, .reMail a {
+        color: white;
+        font-family: 'Montserrat', serif;
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: none;
+        margin-left: 0;
+    }
+    .reNameDMobile {
+        top: 340px;
+    }
+    .reTelMobile {
+        top: 410px;
+    }
+    .reMailDMobile {
+        top: 482px;
+        right: 24px;
+    }
+    .reMailDMobile button {
+        width: 233px ;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #8E8893;
+        border-width: 0px;
+        color: white;
+        font-family: 'Montserrat', serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .userTelDesktop {
+        display: flex;
+    }
+    .confirmation {
+        margin: 0;
+        margin-left: 100px;
+        margin-bottom: 29px;
+        font-size: 12px !important;
+    }
+    .userTel input, .userName input, .userMail input{
+        width: 200px;
+    }
+    .select select:first-of-type {
+        margin-bottom: 0px;
+        height: 29px;
+        width: 119px;
+    }
+    .select input {
+        width: 200px;
+        height: 30px;
+    }
+    .select input[id="api_key"] {
+        width:  217px;
+        height: 30px;
+    }
+    .select {
+        gap: 35px !important;
+    }
+    .addMarket button {
+        background: url("../assets/Button2.svg");
+        width: 40px;
+        height: 40px;
+    }
+    .PreferencesPage__Content__Block2 , .collapsedBlock,  .PreferencesPage__Content__Block3 {
+        /* height: 422px; */
+        width: 90%;
+        margin-left: 20px;
+    }
+    #SaveClose {
+        position: relative;
+        float: right;
+        flex-basis: 100% ;
+        bottom: 340px;
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+        margin-right: -15px;
+        margin-bottom: 30px;
+    }
+    #SaveClose button {
+        height: 46px;
+        width: 46px;
+        transform: scale(0.6);
+        border: none;
+        margin-left: -10px;
+    }
+    #SaveClose button:first-child {
+        background: url("../assets/save.svg");
+
+    }
+    #SaveClose button:last-child {
+        background: url("../assets/closeWindow.svg");
+    }
+
+
+    #HidePassword {
+        margin-left: 0px;
+        display: inline-block;
+        height: 40px;
+    }
+    #HidePassword >button {
+        background: #ffffff00;
+        border: none;
+        height: 22px;
+        width: 28px;
+        right: 1px;
+        top: 1px;
+        transform: translate(620%, -125%) scale(0.75);
+    }
+    #HidePassword > button > img {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    #apiKey {
+        width:216px;
+        height: 45px;
+    }
+    #apiKey + button {
+        transform: translate(620%, -155%) scale(0.75);
+    }
+    .reTel, .reName, .reMail{
+        margin-bottom: -50px;
+        margin-left: -50px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .reMail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: -110px;
+        margin-left: 0;
+        margin-bottom: -90px;
+    }
+    .reMail button {
+        margin-left: 0;
+        height: 30px;
+        width: 200px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    /* Параметры для 3 его блока */
+
+    .PreferencesPage__Content__Block3  {
+        height: 228px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .PreferencesPage__Content__Block3 span  {
+        font-size: 16px;
+    }
+    .PreferencesPage__Content__Block3  div {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .PreferencesPage__Content__Block3 div div {
+        height: 37px;
+        width: 256px;
+        font-size: 14px;
+    }
+    .PreferencesPage__Content__Block3 button {
+        height: 37px;
+        width: 256px;
+        font-size: 14px;
+    }
+}

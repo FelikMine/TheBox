@@ -1,0 +1,418 @@
+.siteHeader {
+    height: 93px;
+    color: #FFFFFF;
+    background-color: #1B1940;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.siteHeader div a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+.brand img {
+  margin-bottom: -5px;
+  margin-right: 4px;
+}
+.siteHeader span {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .siteHeader div a {
+    font-size: 14px;
+  }
+  .siteHeader span {
+    font-size: 18px;
+  }
+}
+.siteHeader div {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.siteHeader .hug {
+  justify-content: space-around;
+  gap: 10px;
+}
+.headerMobile__burger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #9e212100;
+  border: none;
+  left: 20px;
+}
+.headerMobile__close {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff00;
+  border: none;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+.headerMobile ul {
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-position: inside;
+  text-align: center;
+}
+.headerMobile li {
+  margin-bottom: 24px;
+  display: inline-block;
+  text-align: center;
+}
+.headerMobile a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+.headerMobile__menu{
+  height: 292px;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #111035;
+}
+.headerMobile {
+  background-color: #1B1940;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 51px;
+  padding-right: 10px;
+}
+.headerMobile img {
+  width: 18px;
+  height: 18px;
+}
+.headerMobile .brand + span {
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 2px ;
+}
+.home {
+  /* padding: 2; */
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* cursor: pointer; */
+  /* background-color: blue; */
+}
+.home img {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+}
+.preferences img {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+}
+.brand img {
+  margin-bottom: -4px;
+}
+.modalContent {
+  height: 292px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111035 ;
+}
+.modalContent ul {
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-position: inside;
+  text-align: center;
+}
+.modalContent li {
+  margin-bottom: 24px;
+  display: inline-block;
+  text-align: center;
+}
+.modalContent a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+
+.loginContent, .registerContent, .exitContent{
+  height: 468px;
+  width:  500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DDD9E5 ;
+  border-radius: 30px;
+}
+.exitForm:active, .exitFormStay:active {
+  transform: scale(0.95);
+  }
+
+.registerContent {
+  height: 645px;
+}
+.exitContent {
+  height: 285px;
+}
+.loginContent ul, .registerContent ul, .exitContent ul {
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-position: inside;
+  text-align: center;
+  gap: 16px;
+}
+.exitContent ul {
+  margin-top: -8px;
+}
+.loginContent ul input[type="password"]::placeholder,
+input[type="login"]::placeholder, .registerContent ul input[type="password"]::placeholder,
+input[type="login"]::placeholder, input[type="phone"]::placeholder, input[type="mail"]::placeholder {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  color: #8D8D8D;
+}
+.loginContent ul input[type="login"], .loginContent ul input[type="password"],
+.registerContent ul input[type="password"]::placeholder,
+ul input[type="login"]::placeholder, ul input[type="phone"]::placeholder, ul input[type="mail"]::placeholder {
+  /* padding-left: 10px; */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.loginContent li, .registerContent li, .exitContent li {
+  margin-bottom: 12px;
+  display: inline-block;
+  text-align: center;
+}
+.loginContent .submitForm , .registerContent .createForm, .exitContent .exitForm, .exitContent .exitFormStay{
+  background-color: #790BC2;
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+.submitForm:active {
+  transform: scale(0.95);
+  }
+.createForm:active {
+  transform: scale(0.95);
+  }
+.loginContent li input, .registerContent li input, .exitContent li button {
+  height: 52px;
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 0;
+  padding-left: 10px;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+.exitContent .exitFormStay {
+  background-color: #ffffff00;
+  border-color: black;
+  border-width: 1px;
+  color: black;
+}
+.loginContent a, .registerContent a {
+  /* text-decoration: none; */
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+}
+.loginContent li:last-of-type, .exitContent li:last-of-type {
+  margin-top: -12px;
+}
+.loginContent li:first-of-type , .registerContent li:first-of-type, .exitContent li:first-of-type{
+  margin-bottom: -12px;
+}
+.registerContent li > span {
+  color: black;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.registerContent li > button {
+  width: 53px;
+  height: 20px;
+  background-color: #ffffff00;
+  border: none;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #790BC2;
+}
+
+.loginContent li > span {
+  color: black;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.loginContent li > button {
+  background-color: #ffffff00;
+  border: none;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #790BC2;
+  margin-top: 10px;
+}
+
+.headerDesktop__menu{
+  height: 292px;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #111035;
+}
+.loginContent ul li p, .registerContent ul li p, .exitContent ul li p {
+  color: black;
+  font-size: 24px;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+}
+.loginOverlay, .registerOverlay, .exitOverlay{
+  position: fixed; /* Либо absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Policy {
+  font-size: 12px !important;
+  width: 400px;
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  height: 32px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+.Policy:hover {
+  cursor: pointer;
+}
+#error {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #C63131;
+  text-align: left;
+  margin-bottom: -10px;
+}
+@media (max-width: 540px) {
+
+  #error {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #C63131;
+    text-align: left;
+    width: 260px;
+    margin-bottom: -5px;
+  }
+
+  .home img {
+    width: 20px;
+    height: 20px;
+  }
+  .preferences img {
+    width: 20px;
+    height: 20px;
+  }
+  .loginContent, .registerContent, .exitContent {
+    height: 362px;
+    width:  320px;
+  }
+  .registerContent {
+    height: 473px;
+  }
+  .exitContent {
+    height: 230px;
+  }
+  .loginContent ul, .registerContent ul, .exitContent ul {
+    margin-top: 24px;
+    gap: 8px;
+  }
+  .exitContent ul {
+    margin-top: -4px;
+  }
+  .loginContent li, .registerContent li, .exitContent li {
+    margin-bottom: 12px;
+  }
+  .loginContent .submitForm , .registerContent .createForm, .exitContent .exitForm, .exitContent .exitFormStay{
+    font-size: 16px;
+  }
+  .loginContent li input, .registerContent li input, .exitContent li button {
+    height: 39px;
+    width: 256px;
+  }
+  /* .exitContent li button {
+    background-color: ;
+  } */
+  .loginContent a, .registerContent a {
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .loginContent li:last-of-type, .exitContent li:last-of-type {
+    margin-top: -12px;
+  }
+  .loginContent li:first-of-type, .registerContent li:first-of-type , .exitContent li:first-of-type{
+    margin-bottom: -8px;
+  }
+
+  .loginContent ul li p , .registerContent ul li p, .exitContent ul li p{
+    font-size: 20px;
+  }
+  .loginContent ul input[type="password"]::placeholder,
+  input[type="login"]::placeholder,
+  .registerContent ul input[type="password"]::placeholder,
+  input[type="login"]::placeholder, input[type="mail"]::placeholder, input[type="phone"]::placeholder{
+  font-size: 14px;
+  padding-left: 5px;
+  }
+  .Policy {
+    width: 256px;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+  }
+}

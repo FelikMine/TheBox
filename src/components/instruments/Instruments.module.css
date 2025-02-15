@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MontserratMedium';
+    src: url('../assets/Montserrat-Medium.ttf') format('truetype');
+  }
+
+.backgrondPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 1684px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url("../assets/fon.webp");
+    background-position: center;
+    opacity: 0.5;
+    z-index: 100;
+    pointer-events: none;
+}
+.InstrumentsPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+.InstrumentsPage__Content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.InstrumentsPage__Content span{
+  font-size: 32px;
+  font-family: 'Montserrat', serif;
+font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.title {
+  font-size: 32px;
+  font-family: 'Montserrat', serif;
+font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  width: 100%;
+}
+.Instrument {
+  width: 100%;
+  max-width: 1528px;
+  min-width: 955px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 3fr ;
+  align-items: start;
+  justify-content: center;
+  justify-items: stretch;
+  column-gap: 20px;
+
+  position: relative;
+}
+.Instrument span{
+  font-family: 'Montserrat', serif;
+font-weight: 600;
+  font-size: 32px;
+}
+.Instrument button{
+  width: 162px;
+  height: 49px;
+  border-radius: 10px;
+  font-family: 'Montserrat', serif;
+font-weight: 400;
+  font-size: 24px;
+  color: black;
+  margin-left: 270px;
+}
+.Instrument p{
+  font-family: 'Montserrat', serif;
+font-weight: 400;
+  font-size: 16px;
+}
+
+.questionLogo {
+  vertical-align: middle;
+    margin-top: -10px;
+}
+.Instrument .pilipanie_photo img:last-child {
+  position: relative;
+  bottom: 240px;
+  left: 234px;
+}
+
+@media (max-width: 540px) {
+  .InstrumentsPage {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .title {
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .Instrument {
+    width: 321px;
+    height: auto;
+    min-width: 100px;
+    min-height: 450px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Instrument p{
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    font-size: 14px;
+  }
+  .Instrument span{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-right: 100px;
+  }
+  .questionLogo {
+    height: 40px;
+    width: 40px;
+  }
+  .Instrument div{
+    width: 265px;
+  }
+  .Instrument img {
+    width: 100%;
+  }
+  .Instrument .pilipanie_photo img:last-child {
+    position: relative;
+    bottom: 146px;
+    left: 138px;
+    height: 40px;
+    width: 160px;
+  }
+  .questionLogo {
+    height: 30px;
+    width: 30px !important;
+    margin-bottom: -5px;
+  }
+  .Instrument button{
+    width: 150px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Instrument::after {
+    border-top: none;
+  }
+}

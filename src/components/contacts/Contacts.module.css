@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url('../assets/Montserrat-Medium.ttf') format('truetype');
+}
+
+.backgrondPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    min-height: 1684px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/fon.webp");
+    background-position: center;
+    opacity: 0.5;
+    z-index: 100;
+    pointer-events: none;
+}
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    align-items: stretch;
+}
+.ContactsPage {
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    /* align-items: center; */
+}
+.ContactsPage__Content {
+    width: 80%;
+    margin-top: 48px;
+}
+.ContactsPage span {
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+.ContactsPage__Content__Contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+}
+.ContactsPage__Content__Contacts p {
+    font-size: 32px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+}
+.ContactsPage__Content__Contacts div {
+    width: 545px !important;
+}
+.contacts img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+
+@media (max-width: 540px) {
+    .ContactsPage__Content__Contacts {
+        flex-direction: column;
+    }
+    .ContactsPage {
+        height: 56vh;
+    }
+    .ContactsPage__Content {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .ContactsPage span {
+        font-size: 20px;
+        margin-bottom: 48px;
+    }
+    .ContactsPage__Content__Contacts {
+        gap: 16px;
+    }
+    .ContactsPage__Content__Contacts p {
+        font-size: 16px;
+    }
+    .contacts img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-bottom: -5px;
+    }
+}

@@ -1,0 +1,117 @@
+.applicationMobileContent, .applicationDesktopContent{
+    border-radius: 20px;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* height: 400px; */
+    width: 500px;
+    height: 468px;
+    background-color: #DDD9E5 ;
+}
+.applicationMobileContent {
+    height: 362px;
+    width: 320px;
+}
+.modalWindow > div {
+    background-color: transparent !important;
+}
+.modalOverlay {
+    position: fixed; /* Либо absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.applicationContent__close {
+    background-color: #9e212100;
+    border: none;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+.DesktopApplication, .MobileApplication {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 450px;
+    height: 424px;
+    color: black;
+}
+.MobileApplication {
+    height: 326px;
+    width: 288px;
+}
+.DesktopApplication > form, .MobileApplication > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+.DesktopApplication > span, .MobileApplication > span {
+    font-size: 24px;
+}
+.DesktopApplication > form > input , .MobileApplication > form > input {
+    font-size: 16px;
+
+    height: 52px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0;
+    padding-left: 10px;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.MobileApplication > form > input {
+    width: 256px;
+    height: 39px;
+}
+.submitForm {
+    background-color: #790BC2;
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+}
+.submitForm:active {
+    transform: scale(0.95);
+}
+.DesktopApplication > div, .MobileApplication > div{
+    /* height: 10%; */
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 20px; */
+}
+.MobileApplication > div {
+    justify-content: center;
+}
+.DesktopApplication > div > button, .MobileApplication > div > button {
+    padding: 3px 10px;
+    box-sizing: border-box;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    /* margin: 0 15px; */
+}
+.DesktopApplication > div > button:first-child, .MobileApplication > div > button:first-child {
+    border-right: 3px solid black;
+}

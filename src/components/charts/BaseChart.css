@@ -1,0 +1,13 @@
+
+
+
+.anychart-tooltip {
+    border-radius: 5px;
+    font-size: 10px;
+    background: rgba(193, 193, 193, 0);
+    height: 50px;
+    font-family: 'Montserrat', serif;
+font-weight: 400;
+    position: absolute;
+    margin-left: -5px !important;
+}

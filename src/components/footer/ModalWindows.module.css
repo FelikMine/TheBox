@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'MontserratMedium';
+    src: url('../assets/Montserrat-Medium.ttf') format('truetype');
+  }
+
+/* Стилизация модального окна */
+
+.applicationMobileContent, .applicationDesktopContent{
+     background-color: #DDD9E5 ;
+     border-radius: 10px;
+     font-family: 'Montserrat', serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 80px;
+}
+.applicationMobileContent span {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+.applicationMobileContent span {
+    margin-top: 40px;
+}
+.applicationContent {
+    width: 500px;
+    height: 698px;
+    font-size: 24px;
+}
+.applicationMobileContent {
+    width: 320px;
+    height: 555px;
+    font-size: 20px;
+}
+.applicationDesktopContent, .DesktopApplication , .applicationMobileContent, .MobileApplication{
+    width: 80vw;
+    height: 80vh;
+    font-size: 24px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #260182;
+}
+.applicationMobileContent, .MobileApplication{
+    padding: 10px;
+}
+.applicationContent__close, .applicationMobileContent__close {
+    background-color: #9e212100;
+    border: none;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+}
+.applicationDesktopContent p , .applicationMobileContent p {
+    font-family: 'Montserrat', serif;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.applicationDesktopContent strong {
+    font-size: 16px;
+}
+.applicationMobileContent strong {
+    font-size: 12px;
+}
+.applicationDesktopContent ul, .applicationMobileContent ul li , .applicationMobileContent ul {
+    font-weight: 400;
+    font-size: 12px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.applicationMobileContent ul li , .applicationMobileContent ul li {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+/* Основная стилизация для для Firefox */
+/*
+.applicationDesktopContent,
+.DesktopApplication,
+.applicationMobileContent,
+.MobileApplication {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 11, 194, 0.17) #DDD9E5;
+}
+
+/* Для разных контентных классов 
+.applicationDesktopContent, .DesktopApplication {
+    scrollbar-width: thin;
+    scrollbar-color: #260182 #DDD9E5;
+}
+
+.applicationMobileContent, .MobileApplication {
+    scrollbar-width: thin;
+    scrollbar-color: #260182 #DDD9E5;
+} */
+
+.applicationDesktopContent::-webkit-scrollbar-track, .DesktopApplication::-webkit-scrollbar-track,
+.applicationMobileContent::-webkit-scrollbar-track, .MobileApplication::-webkit-scrollbar-track {
+    background-color: #DDD9E5;
+}
+.applicationDesktopContent::-webkit-scrollbar-thumb, .DesktopApplication::-webkit-scrollbar-thumb ,
+.applicationMobileContent::-webkit-scrollbar-thumb, .MobileApplication::-webkit-scrollbar-thumb{
+    background-color: rgba(121, 11, 194, 0.17);
+    width: 2px;
+    border-radius: 10px;
+}
+.applicationDesktopContent::-webkit-scrollbar , .DesktopApplication::-webkit-scrollbar {
+    width: 12px;
+}
+.applicationMobileContent::-webkit-scrollbar, .MobileApplication::-webkit-scrollbar
+{width: 6px;}
+
+.modalOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.applicationMobileContent {
+    margin: 0;
+}
+.applicationDesktopContent, .DesktopApplication , .applicationMobileContent, .MobileApplication{
+    width: 90vw;
+    height: 90vh;
+}

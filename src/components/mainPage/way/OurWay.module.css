@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/Montserrat-SemiBold.ttf') format('truetype');
+  }
+
+.OurWay p {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.OurWay img {
+    width: 100%;
+}
+
+@media (max-width: 540px) {
+    .OurWay p {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Montserrat', serif;
+font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: -25px;
+    }
+    .OurWay img {
+        width: 100%;
+    }
+}
